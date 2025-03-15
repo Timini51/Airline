@@ -1,0 +1,609 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    padding: 7px 10%;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+h1, h2, h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header h3, .filvan h3{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.nav .navbar{
+    display: flex;
+    flex-direction: crow;
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.navbar a{
+    padding: 7px 17px;
+    color: rgb(44, 42, 42);
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.navbar a:hover{
+    color: black;
+}
+
+.contactBtn, .email button{
+    color: white;
+    background: rgb(25, 23, 94);
+    padding: 7px 17px;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.contactBtn:hover{
+    background: rgb(56, 56, 92);
+}
+
+.homepage{
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.image img{
+    width: 800px;
+    border-radius: 200px;
+    justify-self: center;
+    padding: 20px auto;
+}
+
+.class{
+    margin: 50px 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 4px rgb(201, 194, 194);
+}
+
+.class .button{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+
+.button button{
+    width: 200px;
+    padding: 7px;
+    font-size: 1em;
+    background: rgb(222, 228, 247);
+    color: black;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.button button:nth-child(2){
+    color: white;
+    background: rgb(25, 23, 94);
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.info{
+    display:flex;
+    gap:1em;
+    align-items: center;
+}
+
+.bx-search{
+    background: rgb(25, 23, 94);
+    color: white;
+    padding: 4px 7px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.bxs-calendar, .bxs-user, .bxs-location-plus{
+    font-size: 30px;
+    color: black;
+    background: rgb(222, 228, 247);
+    padding: 4px 7px;
+    border-radius: 10px;
+}
+
+.info input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 1em;
+    padding: 10px 0;
+    position: relative;
+}
+
+.info label{
+    font-size: 1.2em;
+    color: black;
+}
+
+.info p, .writeup p, .experience p{
+    color: rgb(44, 42, 42);
+    font-size: 1em;
+}
+
+.travel, .memory, .lounge, .best{
+    padding: 4em 10%;
+}
+
+.Support{
+    text-align: center;
+}
+
+.Support h3, h1{
+    font-size: 2em;
+}
+
+.Support p{
+    font-size: 1em;
+}
+
+.writeup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin-top: 4em;
+}
+
+.div .number{
+    padding: 7px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 50%;
+    background: rgb(25, 23, 94);
+    margin-bottom: 1em;
+}
+
+.div .number:nth-child(2){
+    background: rgb(243, 98, 45);
+}
+.div .number:nth-child(3){
+    background:rgb(235, 151, 120) ;
+}
+
+.div{
+    margin: 2em auto;
+}
+
+.plan{
+    position: relative;
+}
+
+.plan img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 8em;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    height: 300px;
+}
+
+.plan img:nth-child(1){
+    max-width: 240px;
+    transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+    z-index: 3;
+}
+
+.plan img:nth-child(2){
+    max-width: 250px;
+    transform: translate(-50%, calc(-50% - 5rem));
+    z-index: 2;
+}
+
+.plan img:nth-child(3){
+    max-width: 230px;
+    transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
+    z-index: 3;
+}
+
+.memory .make{
+    display: flex;
+    justify-content: space-between;
+}
+
+.make h1, .lounge h1, .best h1{
+    font-size: 2em;
+}
+
+.make .view{
+    font-size: 1em;
+    padding: 7px 10px;
+    border: 1px solid rgb(44, 42, 42);
+    color: rgb(44, 42, 42);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+}
+
+.memo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 30px auto;
+}
+
+.grid{
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 4px rgb(201, 194, 194);
+    justify-content: center;
+    text-align: center;
+}
+
+.grid i{
+    padding: 12px 10px;
+    border-radius: 50%;
+    background: rgb(25, 23, 94);
+    color: white;
+    font-size: 40px;
+    align-items: center;
+}
+
+.grid i::nth-child(2){
+    background: rgb(243, 98, 45);
+}
+
+.grid i::nth-child(3){
+    background: rgb(235, 151, 120);
+}
+
+.lounge{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.experience{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    margin: 10px;
+}
+
+.human{
+    position: relative;
+}
+
+.human img{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    border-radius: 8em;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.human img:nth-child(1){
+    max-width: 300px;
+    transform: translate(calc(-50% - 3em), 20%);
+    height: 350px;
+}
+
+.human img:nth-child(2){
+    max-width: 270px;
+    height: 300px;
+    transform: translate(calc(-50% + 6em), calc(-50% + 20em));
+}
+
+.traveller{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4em;
+    gap:1em;
+}
+
+.city{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.city .photo{
+    position: relative;
+    padding: 1em;
+    text-align: center;
+}
+
+.city .cityimg{
+    height: 200px;
+    width: 100%;
+}
+
+.city .photo img{
+    position: absolute;
+    border-radius:50%;
+    max-width: 70px;
+    height: 70px;
+    top: 0;
+    transform: translate(120%, -50%);
+    left: 50%;
+}
+
+.letter{
+    padding: 4em 10%;
+    background: rgb(222, 228, 247);
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.letter h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.email{
+    background: white;
+    border-radius: 20px;
+    margin-top: 2em;
+}
+
+.email input{
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 7px;
+}
+
+.filvan{
+    padding: 2px 10%;
+    background: rgb(25, 23, 94);
+    color:white;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.end{
+    margin: 3em  0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i{
+    font-size: 22px;
+    padding: 4px;
+    cursor:pointer;
+}
+
+@media(max-width: 1024px){
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .plan img:nth-child(1){
+        max-width: 180px;
+    }
+
+    .plan img:nth-child(2){
+        max-width: 200px;
+    }
+
+    .plan img:nth-child(3){
+        max-width: 180px;
+    }
+
+    .plan img{
+        height: 240px;
+    }
+
+    header{
+        padding:7px 5%;
+    }
+
+    .homepage{
+        padding: 0  5%;
+    }
+
+    .class{
+        margin: 50px 5%;
+    }
+
+    .travel, .memory, .lounge, .best, .letter{
+        padding: 4em 5%;
+    }
+
+    .filvan{
+        padding: 2px 5%;
+    }
+
+    .human img:nth-child(1){
+        max-width: 270px;
+        height: 300px;
+    }
+    
+    .human img:nth-child(2){
+        max-width: 240px;
+        height: 240px;
+    }
+}
+
+@media(max-width: 850px){
+    .plan img:nth-child(1){
+        max-width: 150px;
+    }
+
+    .plan img:nth-child(2){
+        max-width: 180px;
+    }
+
+    .plan img:nth-child(3){
+        max-width: 150px;
+    }
+
+    .plan img{
+        height: 200px;
+    }
+
+    .human img:nth-child(1){
+        max-width: 240px;
+        height: 270px;
+    }
+    
+    .human img:nth-child(2){
+        max-width: 200px;
+        height: 220px;
+    }
+
+    .image img{
+        width: 700px;
+    }
+}
+
+@media(max-width: 750px){
+    .image img{
+        width: 500px;
+    }
+
+    .writeup{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .plan{
+        display: none;
+    }
+
+    .memo{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .lounge{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .human{
+        display: none;
+    }
+
+    .traveller{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .end{
+        flex-direction: column;
+    }
+
+    .button button{
+        width: 150px;
+    }
+}
+
+@media(max-width: 600px){
+    .nav{
+        display: none;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px){
+    .image img{
+        width: 300px;
+    }
+
+    .homepage h1{
+        font-size: 2em;
+    }
+    .button button{
+        width: 100px;
+        font-size: 0.8em;
+    }
+
+    .form{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .make h1, .lounge h1, .best h1{
+        font-size: 1.7em;
+    }
+
+    .travel, .memory, .lounge, .best{
+        padding: 2em 3%;
+    }
+
+    .class{
+        margin: 30px 3%;
+    }
+
+    .memo{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .traveller{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .city .photo img{
+        transform: translate(180%, -50%);
+    }
+
+    .make{
+        flex-direction: column;
+    }
+
+    .make .view{
+        width: 80px;
+    }
+}
